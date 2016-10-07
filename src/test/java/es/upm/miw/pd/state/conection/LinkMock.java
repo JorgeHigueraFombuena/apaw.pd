@@ -15,12 +15,12 @@ public final class LinkMock implements Link {
         return respuesta;
     }
 
-    @Override
+    
     public void enviar(String msg) {
         this.msg = msg;
     }
 
-    @Override
+
     public void recibir(int respuesta) {
         this.respuesta = respuesta;
     }
