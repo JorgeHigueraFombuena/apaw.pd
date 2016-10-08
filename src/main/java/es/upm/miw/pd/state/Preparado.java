@@ -41,8 +41,8 @@ public class Preparado extends State {
 	}
 
 	@Override
-	public void enviar(Context context) {
-		context.setState(new Esperando());
+	public void enviar(Context context, String msg) {
+		context.setState(new Esperando(msg));
 	}
 
 	@Override

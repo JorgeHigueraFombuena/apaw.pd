@@ -4,12 +4,15 @@ import es.upm.miw.pd.state.connection.Estado;
 
 public class Esperando extends State {
 
-private Estado estado;
-	
-	public Esperando(){
+	private Estado estado;
+
+	private String msg;
+
+	public Esperando(String msg){
 		this.estado = Estado.ESPERANDO;
+		this.msg = msg;
 	}
-	
+
 	@Override
 	public Estado getEstado(){
 		return estado;
@@ -36,7 +39,7 @@ private Estado estado;
 	}
 
 	@Override
-	public void enviar(Context context) {
+	public void enviar(Context context, String msg) {
 		throw new UnsupportedOperationException();
 	}
 

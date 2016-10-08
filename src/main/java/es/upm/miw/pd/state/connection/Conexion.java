@@ -38,7 +38,7 @@ public class Conexion {
 	}
 
 	public void enviar(String msg) {
-		context.enviar();
+		context.enviar(msg);
 	}
 
 	public void recibir(int respuesta) {

@@ -35,7 +35,7 @@ private Estado estado;
 	}
 
 	@Override
-	public void enviar(Context context) {
+	public void enviar(Context context, String msg) {
 		throw new UnsupportedOperationException();
 	}
 

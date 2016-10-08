@@ -14,7 +14,7 @@ public abstract class State {
     
     public abstract void parar(Context context);
     
-    public abstract void enviar(Context context);
+    public abstract void enviar(Context context, String msg);
     
     public abstract void recibir(Context context, int value);
 }

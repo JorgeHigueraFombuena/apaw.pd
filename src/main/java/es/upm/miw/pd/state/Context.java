@@ -33,8 +33,8 @@ public class Context {
     	state.parar(this);
     }
     
-    public void enviar(){
-    	state.enviar(this);
+    public void enviar(String msg){
+    	state.enviar(this, msg);
     }
 
     public void recibir(int value){
