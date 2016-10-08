@@ -4,7 +4,18 @@ import es.upm.miw.pd.state.connection.Estado;
 
 public class Cerrado extends State {
 	
-    @Override
+private Estado estado;
+	
+	public Cerrado(){
+		this.estado = Estado.CERRADO;
+	}
+	
+	@Override
+	public Estado getEstado(){
+		return estado;
+	}
+
+	@Override
     public String toString() {
         return "Estado cerrado";
     }

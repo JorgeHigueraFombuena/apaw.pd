@@ -1,6 +1,19 @@
 package es.upm.miw.pd.state;
 
+import es.upm.miw.pd.state.connection.Estado;
+
 public class Parado extends State {
+
+private Estado estado;
+	
+	public Parado(){
+		this.estado = Estado.PARADO;
+	}
+	
+	@Override
+	public Estado getEstado(){
+		return estado;
+	}
 
 	@Override
 	public void abrir(Context context) {

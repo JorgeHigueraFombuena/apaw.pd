@@ -1,6 +1,11 @@
 package es.upm.miw.pd.state;
 
+import es.upm.miw.pd.state.connection.Estado;
+
 public abstract class State {
+	
+	public abstract Estado getEstado();
+	
     public abstract void abrir(Context context);
 
     public abstract void cerrar(Context context);

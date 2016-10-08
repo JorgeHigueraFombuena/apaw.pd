@@ -1,7 +1,20 @@
 package es.upm.miw.pd.state;
 
+import es.upm.miw.pd.state.connection.Estado;
+
 public class Preparado extends State {
 
+	private Estado estado;
+	
+	public Preparado(){
+		this.estado = Estado.PREPARADO;
+	}
+	
+	@Override
+	public Estado getEstado(){
+		return estado;
+	}
+	
 	@Override
 	public String toString(){
 		return "Estado preparado";
