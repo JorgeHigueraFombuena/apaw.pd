@@ -18,10 +18,4 @@ public class Square extends Figure {
     public double numberOfSides() {
         return 4;
     }
-
-    @Override
-    public String toString() {
-        return super.toString();
-    }
-
 }
