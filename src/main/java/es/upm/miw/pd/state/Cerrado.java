@@ -16,6 +16,7 @@ public class Cerrado extends State {
 
 	@Override
 	public void cerrar(Context context) {
+		
 	}
 
 	@Override
