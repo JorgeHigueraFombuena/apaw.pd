@@ -13,7 +13,7 @@ public class SubtractCommand extends Operation {
 	}
 
 	public String name() {
-		return "SubstractCommand";
+		return "Restar";
 	}
 
 }

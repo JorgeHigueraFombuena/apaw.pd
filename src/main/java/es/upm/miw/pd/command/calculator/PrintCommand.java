@@ -13,7 +13,7 @@ public class PrintCommand extends Operation {
 	}
 
 	public String name() {
-		return "PrintCommand";
+		return "Imprimir";
 	}
 
 }

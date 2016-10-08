@@ -14,7 +14,7 @@ public class AddCommand extends Operation {
 	}
 
 	public String name() {
-		return "AddCommand";
+		return "Sumar";
 	}
 
 }

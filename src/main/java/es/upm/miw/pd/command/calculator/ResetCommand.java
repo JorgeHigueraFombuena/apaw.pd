@@ -11,7 +11,7 @@ public class ResetCommand extends Operation {
 	}
 
 	public String name() {
-		return "ResetCommand";
+		return "Restaurar";
 	}
 
 }
