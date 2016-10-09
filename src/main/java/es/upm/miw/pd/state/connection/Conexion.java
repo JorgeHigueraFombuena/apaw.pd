@@ -34,14 +34,16 @@ public class Conexion {
 	}
 
 	public void iniciar() {
-		context.parar();
+		context.iniciar();
 	}
 
 	public void enviar(String msg) {
+		this.link.enviar(msg);
 		context.enviar(msg);
 	}
 
 	public void recibir(int respuesta) {
+		this.link.recibir(respuesta);
 		context.recibir(respuesta);
 	}
 

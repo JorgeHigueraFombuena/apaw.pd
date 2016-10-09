@@ -45,10 +45,10 @@ public class Esperando extends State {
 
 	@Override
 	public void recibir(Context context, int value) {
-		if(value == 0){
+		if(value > 0){
 			context.setState(new Cerrado());
 		}
-		else if (value > 0){
+		else if (value == 0){
 			context.setState(new Preparado());
 		}
 	}

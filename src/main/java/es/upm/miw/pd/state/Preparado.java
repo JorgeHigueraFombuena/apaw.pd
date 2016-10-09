@@ -22,7 +22,6 @@ public class Preparado extends State {
 	
 	@Override
 	public void abrir(Context context) {
-		throw new UnsupportedOperationException();
 	}
 
 	@Override
