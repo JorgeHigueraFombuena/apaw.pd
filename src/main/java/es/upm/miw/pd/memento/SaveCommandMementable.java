@@ -2,6 +2,7 @@ package es.upm.miw.pd.memento;
 
 import es.upm.miw.pd.command.calculator.Calculator;
 import es.upm.miw.pd.command.calculator.Operation;
+import upm.jbb.IO;
 
 public class SaveCommandMementable extends Operation {
 
@@ -14,7 +15,8 @@ public class SaveCommandMementable extends Operation {
 
 	@Override
 	public void execute() {
-		GestorMementos.getInstance().addMemento(name(), calculator.createMemento());
+		GestorMementos.getInstance().addMemento((String)IO.getIO().readString("Nombre del memento"),
+				calculator.createMemento());
 	}
 
 	@Override
