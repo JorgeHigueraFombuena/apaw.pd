@@ -16,6 +16,7 @@ public class MainCalculator {
         this.commandManager.add(new ResetCommandMementable(calculator));
         this.commandManager.add(new PrintCommand(calculator));
         this.commandManager.add(new DeshacerMementable(calculator));
+        this.commandManager.add(new SaveCommandMementable(calculator));
     }
 
     public void execute() {
