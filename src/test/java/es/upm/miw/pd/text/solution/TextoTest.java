@@ -7,13 +7,9 @@ import static org.junit.Assert.fail;
 import org.junit.Before;
 import org.junit.Test;
 
-import es.upm.miw.pd.text.solution.solution.Componente;
-import es.upm.miw.pd.text.solution.solution.FactoriaCaracter;
-import es.upm.miw.pd.text.solution.solution.Parrafo;
-import es.upm.miw.pd.text.solution.solution.Texto;
 
 public class TextoTest {
-    private Componente H, o, l, a, pf, txt;
+    private Texto H, o, l, a, pf, txt;
 
     @Before
     public void ini() {
@@ -26,7 +22,7 @@ public class TextoTest {
         pf.add(o);
         pf.add(l);
         pf.add(a);
-        txt = new Texto();
+        txt = new TextoCompuesto();
         txt.add(pf);
         txt.add(pf);
     }
