@@ -12,11 +12,6 @@ public class Caracter extends Texto {
 	public void add(Texto t) {
 	}
 
-	@Override
-	public void delete(Texto t) {
-		// TODO Auto-generated method stub
-		
-	}
 
 	@Override
 	public String dibujar(boolean mayusculas) {
@@ -28,5 +23,10 @@ public class Caracter extends Texto {
 		}
 		return null;
 	}
-
+	
+	@Override
+	public boolean equals(Object o){
+		return o instanceof Caracter 
+				&& ((Caracter)o).dibujar(false).equals(this.dibujar(false));
+	}
 }

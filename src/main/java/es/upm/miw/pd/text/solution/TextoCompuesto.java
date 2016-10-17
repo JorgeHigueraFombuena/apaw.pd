@@ -13,7 +13,12 @@ public class TextoCompuesto extends TextoContenedor {
 	
 	@Override
 	public void add(Texto t){
-		this.componentes.add(t);
+		if(t.dibujar(false).length() > 1){
+			this.componentes.add(t);
+		}
+		else {
+			throw new UnsupportedOperationException();
+		}
 	}
 
 	@Override
@@ -27,6 +32,6 @@ public class TextoCompuesto extends TextoContenedor {
 		for(Texto t : componentes){
 			solucion += t.dibujar(mayusculas);
 		}
-		return solucion;
+		return solucion + "---o---\n";
 	}
 }

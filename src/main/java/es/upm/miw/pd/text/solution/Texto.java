@@ -4,8 +4,6 @@ public abstract class Texto {
 
 	public abstract void add(Texto t);
 	
-	public abstract void delete(Texto t);
-	
 	public abstract String dibujar(boolean mayusculas);
 	
 }

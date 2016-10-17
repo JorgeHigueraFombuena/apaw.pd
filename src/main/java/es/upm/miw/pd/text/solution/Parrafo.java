@@ -6,14 +6,19 @@ import java.util.List;
 public class Parrafo extends TextoContenedor {
 
 	private List<Texto> texto;
-	
+
 	public Parrafo(){
 		this.texto = new ArrayList<Texto>();
 	}
-	
+
 	@Override
 	public void add(Texto t) {
-		texto.add(t);
+		if(t.dibujar(false).length() == 1){
+			texto.add(t);
+		}
+		else{
+			throw new UnsupportedOperationException();
+		}
 	}
 
 	@Override
@@ -26,7 +31,7 @@ public class Parrafo extends TextoContenedor {
 		for(Texto t : texto){
 			solucion += t.dibujar(mayusculas);
 		}
-		return solucion;
+		return solucion + "\n";
 	}
 
 }

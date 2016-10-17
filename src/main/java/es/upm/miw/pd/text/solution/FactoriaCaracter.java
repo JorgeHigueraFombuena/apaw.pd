@@ -22,7 +22,7 @@ public class FactoriaCaracter {
 		if(caracteres.contains(new Caracter(c))){
 			return caracteres.get(caracteres.indexOf(new Caracter(c)));
 		}
-		else if (caracteres.contains(new Caracter(c))){
+		else if (!caracteres.contains(new Caracter(c))){
 			Caracter caracter = new Caracter(c);
 			caracteres.add(caracter);
 			return caracter;
