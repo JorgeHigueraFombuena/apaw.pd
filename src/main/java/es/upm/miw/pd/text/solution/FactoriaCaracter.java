@@ -1,7 +1,6 @@
 package es.upm.miw.pd.text.solution;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class FactoriaCaracter {

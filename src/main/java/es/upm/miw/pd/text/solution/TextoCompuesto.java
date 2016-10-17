@@ -13,7 +13,7 @@ public class TextoCompuesto extends TextoContenedor {
 	
 	@Override
 	public void add(Texto t){
-		if(t.dibujar(false).length() > 1 || t.dibujar(false).equals("\n")){
+		if(!(t instanceof Caracter)){
 			this.componentes.add(t);
 		}
 		else {

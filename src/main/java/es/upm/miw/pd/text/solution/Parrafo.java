@@ -13,7 +13,7 @@ public class Parrafo extends TextoContenedor {
 
 	@Override
 	public void add(Texto t) {
-		if(t.dibujar(false).length() == 1){
+		if(t instanceof Caracter){
 			texto.add(t);
 		}
 		else{
